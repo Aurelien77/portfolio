@@ -26,8 +26,8 @@ function CreatePost() {
     lien: Yup.string()
       .notRequired("Vous pouvez poster sans insérer de lien")
       .matches(
-        /((https?):\/\/)?(www.youtube.com)/,   /*  /((https?):\/\/)?(www.)/, */
-        "Entrer une URL correcte sous cette forme : https://www.youtube.com !"
+        /((http?):\/\/)/,   /*  /((https?):\/\/)?(www.)/, */
+        "Entrer une URL correcte sous cette forme : https://www. !"
       ),
   });
 

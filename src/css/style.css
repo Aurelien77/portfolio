@@ -506,7 +506,7 @@ h1 {
 
 .containerpost {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   border-radius: 15px;
   box-shadow: rgb(33, 11, 133) 0px 0px 100px;
   background-image: url(../logos/formes.gif);
