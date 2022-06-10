@@ -26,14 +26,14 @@ function CreatePost() {
     lien: Yup.string()
       .notRequired("Vous pouvez poster sans insérer de lien")
       .matches(
-        /((http?):\/\/)/,   /*  /((https?):\/\/)?(www.)/, */
-        "Entrer une URL correcte sous cette forme : https://www. !"
+        /((https?):\/\/)?(www.youtube.com)/,   /*  /((https?):\/\/)?(www.)/, */
+        "Entrer une URL correcte sous cette forme : https://www.youtube.com !"
       ),
   });
 
   const onSubmit = (data) => {
     axios
-      .post("https://portfolioau777.herokuapp.com/posts", data, {
+      .post("https://reves-de-musiques.herokuapp.com/posts", data, {
         headers: { accessToken: localStorage.getItem("accessToken") },
       })
       .then(() => {
