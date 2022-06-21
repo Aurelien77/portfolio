@@ -17,6 +17,8 @@ import Delete from "./pages/Delete";
 import Accueil from "./pages/Accueil";
 import Recherche from "./pages/Recherche";
 import Postpriv from "./pages/Postpriv";
+import CV from "./pages/CV";
+import Competences from "./pages/Competences";
 import { AuthContext } from "./helpers/AuthContext";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -202,7 +204,7 @@ function App() {
                  <li><Link to="/cv">C⛳V.</Link></li> 
                   
                   <li><Link to="/competences">✨ Compétences</Link></li>  
-                  <li><Link to="/contact">📇 Contact</Link></li>  
+                  <li><Link to="/accueil">📇 Contact</Link></li>  
                   <li> <Link to="/login"> 🏛Espace Admin</Link></li>
                   </ul> 
               </>  
@@ -219,8 +221,9 @@ function App() {
 
 
             <Route path="/post/:id" exact component={Post} /> {/*   Page du post individuelle public  */}
-
-
+            <Route path="/cv" exact component={CV} />
+            <Route path="/competences" exact component={Competences} />
+           
 
             <Route path="/profile/:id" exact component={Profile} />
             <Route path="/createpost" exact component={CreatePost} />

@@ -48,7 +48,7 @@ function Profile() {
   return ( <div className="containerpost">
     <div >
 
-    <div><h1> Portfolio développeur de {username} </h1></div>
+   
      
 {/*       <div className="profil">
       <img
