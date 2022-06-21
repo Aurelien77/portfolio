@@ -1,44 +1,29 @@
 
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import image from "../logos/herbe.gif";
-import Nav from "./Nav";
 
-import ReactPlayer from 'react-player'
-import { AuthContext } from "../helpers/AuthContext";
-import { useState, useEffect } from "react";
-import axios from "axios";
-import Login from "./Login";
-import Registration from "./Registration";
+import cv from "../logos/cv.pdf";
+
+
 
 function Acuueil() {
-  const [authState, setAuthState] = useState({
-    username: "",
-    email: "",
-    id: 0,
-    photo_profil: "",
-    prof: "",
-    status: false,
-  });
-
-  useEffect(() => {
-   }, []);
-
-  const logout = () => {
-    localStorage.removeItem("accessToken");
-    setAuthState({ email: "", username: "", prof: "", id: 0, status: false });
-  };
+  
 
   return (
     <>
    
    <div className="accueil">
-      <AuthContext.Provider value={{ authState, setAuthState }}>
-        <Router>
+    
           
 
             
+          <img src={ image} /> 
+        <div className="back">
+          <a href={cv} target="_blank"> Télécharger une version papier du C.V.</a>
           
-            <img src={ image} /> 
+          
+          
+          </div>
+        
                    <div className="presentationtitre">Bienvenue  </div> <br></br>
                   <div className="presentation">  <div className="arriereplanpres">   <span className="transparent">
                     Bonjour à tous,  😊
@@ -61,14 +46,7 @@ function Acuueil() {
                   </div> */} 
         
                   </div>
-          <Switch>
-     
-
-          <Route path="/login" exact component={Login} />
-            <Route path="/registration" exact component={Registration} />
-          </Switch>
-        </Router>
-      </AuthContext.Provider>
+       
     </div> </>
   );
 }

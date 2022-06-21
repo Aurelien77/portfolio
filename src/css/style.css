@@ -58,8 +58,8 @@ h1 {
   border-radius: 20%;
   margin-top: 3%;
   border-radius: 20%;
-  width: auto;
-  height: 30%;
+  width: 30vw;
+  height: 20vw;
 }
 @media only screen and (max-width: 700px) {
   .accueil img {
@@ -72,6 +72,20 @@ h1 {
     width: auto;
     height: 20%;
   }
+}
+.accueil .back a {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 20%;
+  background-color: white;
+  box-shadow: 0.5px 0.5px rgb(77, 58, 244), -0.3em 0 0.2em black;
+}
+.accueil .back a:hover {
+  box-shadow: 1px 1px silver, -0.5em 0 0.4em black;
+  background-color: rgb(137, 237, 192);
+  color: rgb(15, 14, 14);
 }
 .accueil .presentationtitre {
   color: white;
@@ -132,7 +146,7 @@ h1 {
   width: 100%;
   align-content: center;
   align-items: center;
-  text-align: center;
+  /*   text-align: center; */
   flex-direction: column;
   margin: 0%;
   padding: 0%;
@@ -1270,6 +1284,167 @@ span {
   .knowledgesContent .hobbies {
     grid-area: 4 !important;
     margin-top: 0.5rem !important;
+  }
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: url(../logos/formes.gif);
+}
+.contact .contactContent {
+  margin-top: 1%;
+  box-shadow: 1px 1px silver, -0.5em 0 0.4em black;
+  background: rgb(19, 22, 210);
+  border-radius: 20px;
+  width: 35vw;
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  padding: 2%;
+  border-radius: 10% 10%;
+}
+.contact .contactContent .header {
+  grid-area: 1;
+  width: 100%;
+  position: relative;
+  background: rgb(22, 20, 20);
+  height: 30vw;
+  border-radius: 10%;
+}
+.contact .contactContent .header:before {
+  content: "";
+  width: 100%;
+  height: 30vw;
+  position: absolute;
+  background: url(../logos/cv.jpg) no-repeat center top/cover;
+  border-radius: 5% 5% 0% 0%;
+}
+.contact .contactContent .header:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 30px;
+  background: url(../logos/papier.gif) no-repeat center/cover;
+  /* border: solid 3px rgb(30, 57, 212); */
+}
+.contact .contactContent .contactBox {
+  text-align: center;
+  border: solid white 5px;
+  background: rgb(26, 27, 29);
+  margin-top: -3%;
+  flex-direction: column;
+  border-radius: 0% 0% 5% 5%;
+  z-index: 1;
+  width: 100%;
+  color: white;
+}
+.contact .contactContent .contactBox h1 {
+  text-align: center;
+  position: relative;
+  font-size: 1.3rem;
+  margin-top: 5%;
+}
+.contact .contactContent .contactBox h1:after {
+  content: "";
+  width: 50%;
+  background: rgb(22, 20, 20);
+  position: absolute;
+  transform: translateX(-50%);
+}
+.contact .contactContent .contactBox ul {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  width: inherit;
+  margin-top: 1%;
+}
+.contact .contactContent .contactBox ul div {
+  margin: 2%;
+}
+.contact .contactContent .contactBox ul li {
+  position: relative;
+}
+.contact .contactContent .contactBox ul i {
+  padding: 2%;
+  font-size: 1.4rem;
+  transform: translateY(2px);
+}
+.contact .contactContent .contactBox ul span {
+  font-size: 1.4rem;
+  position: absolute;
+  transform: translateX(52px);
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 350px;
+  transition: 0.2s ease;
+}
+.contact .contactContent .contactBox ul .clickInput:hover {
+  transform: translateX(56px);
+  cursor: pointer;
+}
+.contact .socialNetwork {
+  grid-area: 3;
+  /*  @include verticalCenter; */
+}
+.contact .socialNetwork ul {
+  display: flex;
+  text-align: center;
+}
+.contact .socialNetwork ul a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.2rem;
+  background: rgb(26, 27, 29);
+  border-radius: 20px;
+  box-shadow: 0.5px 0.5px rgb(77, 58, 244), -0.3em 0 0.2em black;
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: 0.2s ease;
+  transition: scale 0.1s;
+}
+.contact .socialNetwork ul a:hover {
+  background: rgb(19, 22, 210);
+}
+.contact .socialNetwork ul a i {
+  padding: 2%;
+  color: rgb(245, 237, 237);
+  margin-top: 0.3rem;
+}
+@keyframes pop {
+  to {
+    transform: scaleY(1);
+  }
+}
+.contact .socialNetwork ul a:nth-child(1) {
+  animation: pop 1s forwards;
+  animation-delay: 0.4s;
+}
+.contact .socialNetwork ul a:nth-child(2) {
+  animation: pop 1s forwards;
+  animation-delay: 0.8s;
+}
+.contact .socialNetwork ul a:nth-child(3) {
+  animation: pop 1s forwards;
+  animation-delay: 1.2s;
+}
+.contact .socialNetwork ul a:nth-child(4) {
+  animation: pop 1s forwards;
+  animation-delay: 1.6s;
+}
+
+@media screen and (max-width: 500px) {
+  .contactContent .contactBox {
+    min-width: 100% !important;
+  }
+  .contactContent span {
+    font-size: 0.9rem !important;
+  }
+  .contactContent h4 {
+    font-size: 0.9rem;
   }
 }
 

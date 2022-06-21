@@ -26,10 +26,25 @@ border-radius: 20%;
   margin-top: 3%;
 border-radius: 20%;
 
-width: auto;
-height: 30%;
+width: 30vw;
+height: 20vw;
 }
+& .back a{
 
+padding-left: 10%;
+padding-right: 10%;
+margin-left: 20%;
+margin-right: 20%;
+border-radius: 20%;
+background-color: white;
+  box-shadow: 0.5px 0.5px rgb(77, 58, 244), -0.3em 0 0.2em black;
+  &:hover {
+    
+    box-shadow: 1px 1px silver, -0.5em 0 0.4em black;
+    background-color: rgb(137, 237, 192);
+color: rgb(15, 14, 14);
+  }
+}
 & .presentationtitre {
   
   color: white;
@@ -95,7 +110,7 @@ font-weight: 500;
   width: 100%;
   align-content: center;
   align-items: center;
-  text-align: center;
+/*   text-align: center; */
   flex-direction: column;
   margin: 0%;
   padding: 0%;
@@ -1461,6 +1476,205 @@ padding-bottom: 1rem;
     .hobbies {
       grid-area: 4 !important;
       margin-top: .5rem !important;
+    }
+  }
+}
+.contact {
+  display: flex;
+  justify-content: center;
+ width: 100%;
+  background: url(../logos/formes.gif) /* no-repeat */ ;
+
+
+
+& .contactContent {
+   margin-top: 1%;
+  box-shadow: 1px 1px silver, -0.5em 0 0.4em black;
+  background: $color-3;
+  border-radius: $borderRadius;
+  width: 35vw;
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+padding: 2%;
+border-radius: 10% 10% ;
+  .header {
+    grid-area: 1;
+    width: 100%;
+    position: relative;
+    background: $color-1;
+    height: 30vw;
+    border-radius: 10%;
+    &:before {
+      content: '';
+     
+    
+      width: 100%;
+      height: 30vw;
+      position: absolute;
+      
+      background: url(../logos/cv.jpg) no-repeat center top/cover;
+      border-radius: 5% 5% 0% 0%; 
+    }
+    &:after {
+      content: '';
+    
+    
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 30px;
+      background: url(../logos/papier.gif) no-repeat center /cover;
+/* border: solid 3px rgb(30, 57, 212); */
+
+
+    }
+  }
+  .contactBox {
+  text-align: center;
+    
+    border: solid white 5px;
+    background: $color-5;
+   margin-top: -3%;
+  
+    flex-direction: column;
+    border-radius: 0% 0% 5% 5%;
+   
+    z-index:1;
+    width: 100%;
+   color: white;
+
+    h1 {
+   
+  
+      text-align: center;
+     
+      position: relative;
+     
+font-size: 1.3rem;
+margin-top: 5%;
+      &:after {
+        content: '';
+      
+        width: 50%;
+        background: $color-1;
+        position: absolute;
+    
+     
+        transform: translateX(-50%);
+      }
+    }
+    ul {   display: flex;
+   justify-content: center;
+   & div {
+
+margin: 2%;
+
+   }
+     gap:1%;
+      width: inherit;
+   
+      margin-top: 1%;
+
+      li {  
+        
+        position: relative;
+      }
+
+     & i {
+      padding: 2%;
+        font-size: 1.4rem;
+        
+        transform: translateY(2px);
+        
+      }
+      span {
+        font-size: 1.4rem;
+        position: absolute;
+        transform: translateX(52px);
+        background: transparent;
+        border: none;
+        outline: none;
+        width: 350px;
+        transition: .2s ease;
+      }
+      .clickInput:hover {
+        transform: translateX(56px);
+        cursor: pointer;
+      }
+    }
+  }}
+  .socialNetwork {
+    grid-area: 3;
+   /*  @include verticalCenter; */
+
+    ul {
+      display: flex;
+      text-align: center;
+    
+     
+
+      a {
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+        font-size: 1.2rem;
+        background: $color-5;
+        border-radius: $borderRadius;
+       
+       
+        box-shadow: $shadow;
+        transform: scaleY(0);
+        transform-origin: center;
+        transition: .2s ease;
+        transition: scale .1s;
+
+        &:hover {
+          background: $color-4;
+        }
+
+        i {
+          padding: 2%;
+          color: $color-2;
+          margin-top: .3rem;
+        }
+      }
+      //ANIMATION
+      @mixin networkAnim($timeout) {
+        animation: pop 1s forwards;
+        animation-delay: $timeout;
+
+      }
+      @keyframes pop {
+        to {
+          transform: scaleY(1);
+        }
+      }
+      a:nth-child(1) {
+        @include networkAnim(.4s);
+      }
+      a:nth-child(2) {
+        @include networkAnim(.8s);
+      }
+      a:nth-child(3) {
+        @include networkAnim(1.2s);
+      }
+      a:nth-child(4) {
+        @include networkAnim(1.6s);
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px){
+  .contactContent {
+    .contactBox {
+      min-width: 100% !important;
+    }
+    span {
+      font-size: .9rem !important;
+    }
+    h4 {
+      font-size: .9rem;
     }
   }
 }
