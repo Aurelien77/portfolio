@@ -109,10 +109,7 @@ function Profile() {
            
               
               </div>
-              <div className="atarget">
-              <a target="blank" href={value.lien}>
-                {value.lien}
-              </a> </div></div>
+              </div>
               <div className="footer">
                 <div className="textfooter">
              {/*       {value.createdAt.replace('T', ' à ').slice(0, 18)} */}

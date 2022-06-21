@@ -30,7 +30,7 @@ width: 30vw;
 height: 20vw;
 }
 & .back a{
-
+@include smartphone-ajustement-cv;
 padding-left: 10%;
 padding-right: 10%;
 margin-left: 20%;
@@ -132,7 +132,7 @@ font-weight: 500;
  margin-right: 10%;
  width: 100%;
 font-size: 1.4rem;
-
+@include menu-text-ecran-smartphone;
 
 /* border: 3px solid red; */
   background-color: black;
@@ -520,13 +520,15 @@ padding: 0%;
   background-position: center bottom, left top;
   background-repeat: repeat;
   width: 100%;
+  height: 100%;
   align-items: center;
   word-wrap: break-word;
 & .post {
   display: flex;
   flex-direction: column;
   width: 50vw;
- 
+  height: 100%;
+ @include postsmartphone;
   border-radius: 10px;
   flex-direction: column;
   align-items: center;
@@ -582,7 +584,7 @@ text-align: center;
   
 
   & .iframdiv {
-
+@include smartphoneifram;
     font-size: 2px;
     width: 100%;
       height: 20vw; 
@@ -1353,80 +1355,7 @@ padding-bottom: 1rem;
         }
       }
     }
-    .experience {
-      grid-area: E;
-      margin: 0 0 .5rem .5rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 10% 1fr 1fr;
-      grid-template-areas: 
-        "1"
-        "2"
-        "3";
-      
-      h3 {
-        grid-area: 1;
-      }
-      h4 {
-        font-size: 1.1rem;
-        color: $color-5;
-      }
-      h5 {
-        color: $color-3;
-        padding: 0.5rem 0 0.5rem 1rem;
-      }
-      p {
-        text-align: justify;
-        padding: 0 1rem;
-      }
-      .exp-1 {
-        grid-area: 2;
-      }
-      .exp-2 {
-        grid-area: 3;
-      }
-    }
-    .otherSkills {
-      grid-area: O;
-      margin-right: 0.5rem;
 
-      .list {
-        display: flex;
-        width: 80%;
-        height: 100%;
-        margin: 0 auto;
-        justify-content: space-between;
-
-        ul {
-          height: 80%;
-          display: grid;
-
-          i {
-            color: $color-5;
-          }
-        }
-      }
-    }
-    .hobbies {
-      grid-area: H;
-      padding-left: 1.5rem;
-
-      ul {
-        height: 80%;
-        display: grid;
-
-        li {
-          i {
-            position: absolute;
-            color: $color-5;
-          }
-          span {
-            position: absolute;
-            transform: translateX(2.2rem);
-          }
-        }
-      }
-    }
   }
 }
 @media screen and (max-width: 950px){
@@ -1458,9 +1387,7 @@ padding-bottom: 1rem;
 }
 @media screen and (max-width: 500px){
   .knowledgesContent {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    grid-template-rows: 1fr 1fr 180px 180px !important;
+ margin-top: 1%;
     
     .languages {
       grid-area: 1 !important;
@@ -1479,6 +1406,51 @@ padding-bottom: 1rem;
     }
   }
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+  .knowledgesContent {
+ margin-top: 1%;
+    
+    .languages {
+      grid-area: 1 !important;
+    }
+    .experience {
+      grid-area: 2 !important;
+      margin-left: 0 !important;
+    }
+    .otherSkills {
+      grid-area: 3 !important;
+      margin-right: 0 !important;
+    }
+    .hobbies {
+      grid-area: 4 !important;
+      margin-top: .5rem !important;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contact {
   display: flex;
   justify-content: center;
@@ -1493,7 +1465,7 @@ padding-bottom: 1rem;
   background: $color-3;
   border-radius: $borderRadius;
   width: 35vw;
-  height: 100%;
+  height: 45vw;
   overflow: hidden;
   display: grid;
 padding: 2%;
@@ -1503,7 +1475,7 @@ border-radius: 10% 10% ;
     width: 100%;
     position: relative;
     background: $color-1;
-    height: 30vw;
+    height: 25vw;
     border-radius: 10%;
     &:before {
       content: '';
@@ -1665,8 +1637,48 @@ margin: 2%;
     }
   }
 }
-@media screen and (max-width: 500px){
-  .contactContent {
+@media screen and (max-width: 1500px){
+ .contact {
+
+
+
+  & .contactContent {
+width: 100% ;
+height: 100%;
+
+.header {
+  grid-area: 1;
+  width: 100%;
+  position: relative;
+  background: $color-1;
+  height: 28vw;
+  border-radius: 10%;
+  &:before {
+    content: '';
+   
+  
+    width: 100%;
+    height: 30vw;
+    position: absolute;
+    
+    background: url(../logos/cv.jpg) no-repeat center top/cover;
+    border-radius: 5% 5% 0% 0%; 
+  }
+  &:after {
+    content: '';
+  
+  
+    width: 2%;
+    height: 0%;
+    position: absolute;
+    top: 30px;
+    background: url(../logos/papier.gif) no-repeat center /cover;
+/* border: solid 3px rgb(30, 57, 212); */
+
+
+  }
+}
+
     .contactBox {
       min-width: 100% !important;
     }
@@ -1677,4 +1689,4 @@ margin: 2%;
       font-size: .9rem;
     }
   }
-}
+}}

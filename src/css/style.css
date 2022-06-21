@@ -82,6 +82,12 @@ h1 {
   background-color: white;
   box-shadow: 0.5px 0.5px rgb(77, 58, 244), -0.3em 0 0.2em black;
 }
+@media only screen and (max-width: 700px) {
+  .accueil .back a {
+    margin: 0px;
+    font-size: 3vw;
+  }
+}
 .accueil .back a:hover {
   box-shadow: 1px 1px silver, -0.5em 0 0.4em black;
   background-color: rgb(137, 237, 192);
@@ -168,6 +174,11 @@ h1 {
   color: white;
   /*   padding-left: 2%;
     padding-right: 2%; */
+}
+@media only screen and (max-width: 1001px) {
+  .ajust .barredenavigation {
+    font-size: 1rem;
+  }
 }
 .ajust .barredenavigation a {
   display: flex;
@@ -527,6 +538,7 @@ h1 {
   background-position: center bottom, left top;
   background-repeat: repeat;
   width: 100%;
+  height: 100%;
   align-items: center;
   word-wrap: break-word;
 }
@@ -534,6 +546,7 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 50vw;
+  height: 100%;
   border-radius: 10px;
   flex-direction: column;
   align-items: center;
@@ -549,6 +562,13 @@ h1 {
   background-color: white;
   margin-bottom: 4%;
   /*   background-image: url(../logos/icon.svg); */
+}
+@media only screen and (max-width: 700px) {
+  .containerpost .post {
+    width: 100%;
+    height: 100%;
+    pmargin: 1%;
+  }
 }
 .containerpost .post .title {
   width: 100%;
@@ -586,6 +606,12 @@ h1 {
   height: 20vw;
   padding: 0%;
   text-align: center;
+}
+@media only screen and (max-width: 700px) {
+  .containerpost .post .body .iframdiv {
+    width: 100%;
+    height: 80vw;
+  }
 }
 .containerpost .post .body .iframdiv .lien {
   width: 100%;
@@ -1177,69 +1203,6 @@ span {
     width: 100%;
   }
 }
-.knowledges .knowledgesContent .experience {
-  grid-area: E;
-  margin: 0 0 0.5rem 0.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 10% 1fr 1fr;
-  grid-template-areas: "1" "2" "3";
-}
-.knowledges .knowledgesContent .experience h3 {
-  grid-area: 1;
-}
-.knowledges .knowledgesContent .experience h4 {
-  font-size: 1.1rem;
-  color: rgb(26, 27, 29);
-}
-.knowledges .knowledgesContent .experience h5 {
-  color: rgb(19, 22, 210);
-  padding: 0.5rem 0 0.5rem 1rem;
-}
-.knowledges .knowledgesContent .experience p {
-  text-align: justify;
-  padding: 0 1rem;
-}
-.knowledges .knowledgesContent .experience .exp-1 {
-  grid-area: 2;
-}
-.knowledges .knowledgesContent .experience .exp-2 {
-  grid-area: 3;
-}
-.knowledges .knowledgesContent .otherSkills {
-  grid-area: O;
-  margin-right: 0.5rem;
-}
-.knowledges .knowledgesContent .otherSkills .list {
-  display: flex;
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  justify-content: space-between;
-}
-.knowledges .knowledgesContent .otherSkills .list ul {
-  height: 80%;
-  display: grid;
-}
-.knowledges .knowledgesContent .otherSkills .list ul i {
-  color: rgb(26, 27, 29);
-}
-.knowledges .knowledgesContent .hobbies {
-  grid-area: H;
-  padding-left: 1.5rem;
-}
-.knowledges .knowledgesContent .hobbies ul {
-  height: 80%;
-  display: grid;
-}
-.knowledges .knowledgesContent .hobbies ul li i {
-  position: absolute;
-  color: rgb(26, 27, 29);
-}
-.knowledges .knowledgesContent .hobbies ul li span {
-  position: absolute;
-  transform: translateX(2.2rem);
-}
 
 @media screen and (max-width: 950px) {
   .knowledgesContent h3 {
@@ -1266,9 +1229,27 @@ span {
 }
 @media screen and (max-width: 500px) {
   .knowledgesContent {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    grid-template-rows: 1fr 1fr 180px 180px !important;
+    margin-top: 1%;
+  }
+  .knowledgesContent .languages {
+    grid-area: 1 !important;
+  }
+  .knowledgesContent .experience {
+    grid-area: 2 !important;
+    margin-left: 0 !important;
+  }
+  .knowledgesContent .otherSkills {
+    grid-area: 3 !important;
+    margin-right: 0 !important;
+  }
+  .knowledgesContent .hobbies {
+    grid-area: 4 !important;
+    margin-top: 0.5rem !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .knowledgesContent {
+    margin-top: 1%;
   }
   .knowledgesContent .languages {
     grid-area: 1 !important;
@@ -1298,7 +1279,7 @@ span {
   background: rgb(19, 22, 210);
   border-radius: 20px;
   width: 35vw;
-  height: 100%;
+  height: 45vw;
   overflow: hidden;
   display: grid;
   padding: 2%;
@@ -1309,7 +1290,7 @@ span {
   width: 100%;
   position: relative;
   background: rgb(22, 20, 20);
-  height: 30vw;
+  height: 25vw;
   border-radius: 10%;
 }
 .contact .contactContent .header:before {
@@ -1436,14 +1417,43 @@ span {
   animation-delay: 1.6s;
 }
 
-@media screen and (max-width: 500px) {
-  .contactContent .contactBox {
+@media screen and (max-width: 1500px) {
+  .contact .contactContent {
+    width: 100%;
+    height: 100%;
+  }
+  .contact .contactContent .header {
+    grid-area: 1;
+    width: 100%;
+    position: relative;
+    background: rgb(22, 20, 20);
+    height: 28vw;
+    border-radius: 10%;
+  }
+  .contact .contactContent .header:before {
+    content: "";
+    width: 100%;
+    height: 30vw;
+    position: absolute;
+    background: url(../logos/cv.jpg) no-repeat center top/cover;
+    border-radius: 5% 5% 0% 0%;
+  }
+  .contact .contactContent .header:after {
+    content: "";
+    width: 2%;
+    height: 0%;
+    position: absolute;
+    top: 30px;
+    background: url(../logos/papier.gif) no-repeat center/cover;
+    /* border: solid 3px rgb(30, 57, 212); */
+  }
+  .contact .contactContent .contactBox {
     min-width: 100% !important;
   }
-  .contactContent span {
+  .contact .contactContent span {
     font-size: 0.9rem !important;
   }
-  .contactContent h4 {
+  .contact .contactContent h4 {
     font-size: 0.9rem;
   }
 }
