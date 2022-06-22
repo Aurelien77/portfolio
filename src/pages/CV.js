@@ -1,7 +1,11 @@
-import React from 'react'
-
+import React from 'react';
+import Lettre from './component/Lettre';
+import TextCV from './component/TextCV';
 export default function CV() {
-  return (
-    <div>CV</div>
+  return (<div className='cv'>
+ {/*   <div className='premier'> <Lettre /></div> */}
+  <div className='deuxieme'> <TextCV />
+  </div><Lettre/>
+    </div>
   )
 }

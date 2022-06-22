@@ -6,7 +6,7 @@ function PageNotFound() {
     <div>
       <p class="not"> La page n'a pas été trouvée </p>
       <p class="not">
-        Go to the Home Page: <Link to="/">=> Home Page</Link>
+        Go to the Home Page: <Link to="/profile/1">=> Home Page</Link>
       </p>
     </div>
   );

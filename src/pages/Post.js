@@ -88,7 +88,7 @@ function Post() {
         headers: { accessToken: localStorage.getItem("accessToken") },
       })
       .then(() => {
-        history.push("/Home");
+        history.push("/profile/1");
       });
   };
 
@@ -186,39 +186,42 @@ function Post() {
         
       </div>
 
-
+      {(authState.username === postObject.username ||
+              authState.admin === true) && (
+                <div className="addCommentContainer">
+                <Formik
+                  initialValues={initialValues}
+                  onClic={addComment}
+                  validationSchema={validationSchema}
+                >
+                  <Form className="formcommentaire" id="commentaire">
+                    <label></label>
+                    {/*    <ErrorMessage name="commentaire" component="span" /> */}
+      
+                    <Field
+                      component="textarea"
+                      rows="3"
+                      cols="45"
+                      autocomplete="off"
+                      id="comment"
+                      name="commentaire"
+                      placeholder="(Ex. Très sympa !...)"
+                      value={newComment}
+                      onChange={(event) => {
+                        setNewComment(event.target.value);
+                      }}
+                    />
+                    <button className="boutoncommentaire" onClick={addComment}>
+                      {" "}
+                      Ajouter un commentaire
+                    </button>
+                  </Form>
+                </Formik>
+              </div>
+            )}
       
      
-        <div className="addCommentContainer">
-          <Formik
-            initialValues={initialValues}
-            onClic={addComment}
-            validationSchema={validationSchema}
-          >
-            <Form className="formcommentaire" id="commentaire">
-              <label></label>
-              {/*    <ErrorMessage name="commentaire" component="span" /> */}
-
-              <Field
-                component="textarea"
-                rows="3"
-                cols="45"
-                autocomplete="off"
-                id="comment"
-                name="commentaire"
-                placeholder="(Ex. Très sympa !...)"
-                value={newComment}
-                onChange={(event) => {
-                  setNewComment(event.target.value);
-                }}
-              />
-              <button className="boutoncommentaire" onClick={addComment}>
-                {" "}
-                Ajouter un commentaire
-              </button>
-            </Form>
-          </Formik>
-        </div>
+      
 
         
         <div className="listOfComments">

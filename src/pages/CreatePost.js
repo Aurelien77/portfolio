@@ -37,7 +37,7 @@ function CreatePost() {
         headers: { accessToken: localStorage.getItem("accessToken") },
       })
       .then(() => {
-        history.push("/Home");
+        history.push("/profile/1");
       });
   };
 

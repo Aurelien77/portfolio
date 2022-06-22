@@ -1,13 +1,12 @@
 /* import "./App.css"; */
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-
-import Home from "./pages/Home";
+import "./css/style.css";  
 import Priv from "./pages/Priv";
 import CreatePost from "./pages/CreatePost";
-import Createpostpriv from "./pages/CreatePostpriv";
+
 import Post from "./pages/Post";
-import Post2 from "./pages/Post2";
+
 import Registration from "./pages/Registration";
 import Login from "./pages/Login";
 import PageNotFound from "./pages/PageNotFound";
@@ -15,8 +14,7 @@ import Profile from "./pages/Profile";
 import ChangePassword from "./pages/ChangePassword";
 import Delete from "./pages/Delete";
 import Accueil from "./pages/Accueil";
-import Recherche from "./pages/Recherche";
-import Postpriv from "./pages/Postpriv";
+
 import CV from "./pages/CV";
 import Competences from "./pages/Competences";
 import { AuthContext } from "./helpers/AuthContext";
@@ -53,7 +51,7 @@ function App() {
             username: response.data.username,
             id: response.data.id,
             photo_profil: response.data.photo_profil,
-           /*  email: response.data.email, */
+        
             prof: response.data.prof,
             status: true,
           });
@@ -113,18 +111,7 @@ function App() {
 
 
 
-<li id="username" className="username">   {!authState.prof && authState.username && (
-
-
-
-                  <Link to={`/postpriv/${authState.id}`}>
-                    {authState.username}
-                  </Link>
-
-
-
-
-                )}
+<li id="username" className="username"> 
                 
                 
                 {authState.prof && (
@@ -138,19 +125,11 @@ function App() {
 
 
 
-<li className="fil" >{authState.status && <Link to="/Home"> ✨Fils d'actualités</Link>}</li>
 
 
 
-<li className="creerprive">   {authState.status && (
-                  <Link to="/createpostpriv">🎶 Créer un Post Privé</Link>
-                )}</li>
 
-<li className="priv" >{authState.status && (
-                  <Link to={`/postpriv/${authState.id}`}>
-                    🎼Mes Posts Privés
-                  </Link>
-                )}</li>
+
 
 
 
@@ -232,24 +211,24 @@ function App() {
 
 {/* Vers la page d'un poste individuel section Personelle */}
 
-            <Route path="/postsecondaire/:id" exact component={Post2} />   {/*   Page du post individuelle privé */}
+        
 
-            <Route path="/postpriv/:id" exact component={Postpriv} />
+      
             <Route path="/changepassword" exact component={ChangePassword} />
-            <Route path="/createpostpriv" exact component={Createpostpriv} />
+           
 {/* Login et enregisrement utilisateur  */}
             <Route path="/registration" exact component={Registration} />
             <Route path="/login" exact component={Login} />
  
             <Route path="/Accueil" exact component={Accueil} />
-            <Route path="/Home" exact component={Home} />
+          
             <Route path="/" exact component={Accueil} />
 
 
          
             <Route path="/delete" exact component={Delete} />
            
-            <Route path="/recherche2" exact component={Recherche} />
+         
        
 
             <Route path="*" exact component={PageNotFound} />

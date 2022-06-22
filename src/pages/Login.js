@@ -29,7 +29,7 @@ function Login() {
             prof: response.data.prof,
             status: true,
           });
-          history.push("/Home");
+          history.push("/profile/1");
         }
       });
   };
