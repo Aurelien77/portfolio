@@ -14,6 +14,7 @@ class TextCV extends Component {
       shchild2: false,
       shchild3: false,
       shchild4: true,
+      shchild5: false,
     };
     this.hideComponent = this.hideComponent.bind(this);
     
@@ -34,12 +35,15 @@ class TextCV extends Component {
         case "shchild4":
         this.setState({ shchild4: !this.state.shchild4 });
         break;
+        case "shchild5":
+          this.setState({ shchild5: !this.state.shchild5 });
+          break;
       default: return;
     }
   }
   
   render() {
-    const { shchild1, shchild2, shchild3, shchild4 } = this.state;
+    const { shchild1, shchild2, shchild3, shchild4,  } = this.state;
     return (
             <div className="cv">
 <div className="flexcv">
@@ -53,19 +57,29 @@ class TextCV extends Component {
            </div>
   
   </div>  
+
+
 <div className="ex">
-            <div  onClick={() => this.hideComponent("shchild1")}>
-            MES EXPERIENCES 1 
-            </div><div>
-        {shchild1 && <Child1 />}
-        </div>
-          <div onClick={() => this.hideComponent("shchild2")}>
-          MES EXPERIENCES 2
-          </div><div>
+
+
+            <div  onClick={() => this.hideComponent("shchild1")} id="expro">
+            EXPERIENCES PROFESSIONNELLES
+            </div>
+            
+            {shchild1 && <Child1 />}
+           
+          <div onClick={() => this.hideComponent("shchild2")}id="formation">
+          FORMATIONS
+          </div>
+          
+          <div>
         {shchild2 && <Child2 />}
         </div>
-          <div onClick={() => this.hideComponent("shchild3")}>
-          MES EXPERIENCES 3
+
+
+
+          <div onClick={() => this.hideComponent("shchild3")} id="hobbies">
+         HOBBIES
             </div><div>
         {shchild3 && <Child3 />}
         </div>

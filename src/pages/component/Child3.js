@@ -10,8 +10,7 @@ class Child3 extends Component {
   }
   
   render() {
-    return <div>This is how GFG child component 
-                number 3 looks like.</div>;
+    return <span>Lecture, Jardinage, Aquarium recifaux, Course à pied, Dessin</span>;
   }
 }
   
