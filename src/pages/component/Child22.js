@@ -24,7 +24,7 @@ class Child22 extends Component {
     const {  shchild22 } = this.state;
     return (
             
-      <div  >
+      <div className="textcv2" >
     BNP PARIBAS Siège (Paris)
 
 Service IMEX

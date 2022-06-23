@@ -24,7 +24,7 @@ class Child15 extends Component {
     const {  shchild15 } = this.state;
     return (
             
-      <div  >
+      <span  >
      Child 13
       
 
@@ -32,7 +32,7 @@ class Child15 extends Component {
       {shchild15&& <Child15/>}
   
     
-   </div>
+   </span>
       
  
       

@@ -70,7 +70,7 @@ class Child5 extends Component {
   render() {
     const {  shchild5, shchild6, shchild7, shchild8,  shchild17,shchild18,shchild19,shchild20,} = this.state;
     return (
-            <div className="cvarriere">
+            <span>
 
 
 
@@ -79,7 +79,7 @@ class Child5 extends Component {
 
    
 <div  onClick={() => this.hideComponent("shchild17")} className="topteam2" >
-<span>Janvier 2019  à Janvier 2021  :</span>   Prestataire de service chez le client Carrefour
+<span  className="datecv2">Janvier 2019  à Janvier 2021  :</span>  <span className="textcv2"> Prestataire de service chez le client <span id="spantopteam">Carrefour</span></span>
       
      
            
@@ -97,8 +97,8 @@ class Child5 extends Component {
  
 
 <div  onClick={() => this.hideComponent("shchild18")}className="topteam2" >
-<span> Décembre 2017  à Janvier 2019 : </span>
-Prestataire de service chez le client Natixis
+<span  className="datecv2"> Décembre 2017  à Janvier 2019 : </span>  <span className="textcv2">
+Prestataire de service chez le client <span id="spantopteam">Natixis </span></span>
 
 
 
@@ -108,7 +108,7 @@ Prestataire de service chez le client Natixis
 </div>
       
  
-      <div onClick={() => this.hideComponent("shchild19")} className="topteam2"> <span> Décembre 2016  à Décembre 2017 : </span> Prestataire de service chez le client BNP Paribas
+      <div onClick={() => this.hideComponent("shchild19")} className="topteam2"> <span className="datecv2"> Décembre 2016  à Décembre 2017 : </span> <span className="textcv2"> Prestataire de service chez le client <span id="spantopteam"> BNP Paribas </span></span>
      
        
       
@@ -119,7 +119,7 @@ Prestataire de service chez le client Natixis
       </div> 
 
 
-      <div onClick={() => this.hideComponent("shchild20")} className="topteam2" > <span> Septembre 2016  à Decembre 2016  :  </span>Prestataire de service chez le client Sanofi 
+      <div onClick={() => this.hideComponent("shchild20")} className="topteam2" > <span  className="datecv2"> Septembre 2016  à Decembre 2016  :  </span><span className="textcv2"> Prestataire de service chez le clie <span id="spantopteam">  Sanofi </span> </span>
      
        
       
@@ -130,7 +130,7 @@ Prestataire de service chez le client Natixis
       </div> 
       
      
-      </div>
+      </span>
   
  
  

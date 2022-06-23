@@ -24,7 +24,7 @@ class Child23 extends Component {
     const {  shchild23 } = this.state;
     return (
             
-      <div  >
+      <div className="textcv2" >
     Egalement remplacement de techniciens gestionnaires de pont TMS , RMX + CMA chez BNP Paribas Claude Bernard 75019 ainsi que Ministère des finances et de l’économie 75012, connexion des Rim (Réunions interministérielles et visioconférences Ministre de l’économie). 
       
 

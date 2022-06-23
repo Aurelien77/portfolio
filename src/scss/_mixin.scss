@@ -1,5 +1,22 @@
 
 
+
+@mixin mobilecompetences {
+  @media only screen and (max-width:$ipadmaxmenu  )  and (min-width:0px  )  {
+ 
+
+ 
+ margin-bottom: 10%;
+   
+  padding: 1%;
+ 
+ 
+ }
+ }
+
+
+
+
 @mixin ipad-ajustement_menu_text {
   @media only screen and (max-width:$ipadmaxmenu  )  and (min-width:$ipadmax  )  {
  

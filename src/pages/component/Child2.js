@@ -36,46 +36,85 @@ class Child2 extends Component {
   render() {
     const {shchild26, shchild27, shchild28,  } = this.state;
     return (
-            <div>
-      <div onClick={() => this.hideComponent("shchild26")} > Formation de dévellopement informatique
+
+
+<div className="cvform">
+
+<div  onClick={() => this.hideComponent("shchild26")} >
+Formation de dévellopement informatique
      Child 14
-      
 
-  
-   
-  
-    
-   </div>   {shchild26 && <Child26 />}
-      
- 
-      <div onClick={() => this.hideComponent("shchild27")}  > Formation de support informatique
+
+
+
+
+
+</div>
+
+
+
+
+
+
+{shchild26 && <Child26/>}
+
+
+
+
+
+<div  onClick={() => this.hideComponent("shchild27")}>
+Formation de support informatique
       Child 15
-       
- 
-   
-      
-   
-     
-    </div> {shchild27 && <Child27 />}
 
-    <div  onClick={() => this.hideComponent("shchild28")} >
-    Formation aux outils de création assistés par ordinateur
+
+
+
+
+
+</div> {shchild27 && <Child27 />}
+
+<div  onClick={() => this.hideComponent("shchild28")} >
+Formation aux outils de création assistés par ordinateur
        child 16
- 
-   
-     
-   
-     
-    </div>  {shchild28 && <Child28 />}
-      
-    </div>
-    
-  
- 
- 
+
+
+
+
+
+
+</div>
+{shchild28 && <Child28 />}
+
+</div>
+
+
 );
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+ 
+    
+
+
+    
+  
+ 
+
   
   
 export default Child2;

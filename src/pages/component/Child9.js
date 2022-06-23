@@ -36,8 +36,8 @@ class Child9 extends Component {
   render() {
     const {  shchild21,shchild22,shchild23 } = this.state;
     return (
-            <div>
-      <div  onClick={() => this.hideComponent("shchild21")} className="videlio">
+            <span>
+      <div  onClick={() => this.hideComponent("shchild21")} className="textcv2">
       janvier 2015  à Septembre 2016 :  Videlio Siège, Gennevilliers.
       child 9
 
@@ -46,7 +46,7 @@ class Child9 extends Component {
    </div>{shchild21 && <Child21 />}
     
 
-<div onClick={() => this.hideComponent("shchild22")} className="videlio" >Préstataire de service chez le client BNP PARIBAS Siège, Paris. 
+<div onClick={() => this.hideComponent("shchild22")} className="textcv2" >Préstataire de service chez le client BNP PARIBAS Siège, Paris. 
 Child 10
  
 
@@ -57,7 +57,7 @@ Child 10
 </div> {shchild22 && <Child22 />} 
       
  
-      <div onClick={() => this.hideComponent("shchild23")} className="videlio"> Préstataire de service chez le client Ministère de l'économie, Bercy. 
+      <div onClick={() => this.hideComponent("shchild23")} className="textcv2"> Préstataire de service chez le client Ministère de l'économie, Bercy. 
       Child 11
        
       
@@ -68,7 +68,7 @@ Child 10
       </div>     {shchild23 && <Child23 />}
       
      
-      </div>
+      </span>
   
  
  

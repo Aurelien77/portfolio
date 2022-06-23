@@ -6,6 +6,12 @@ import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
 /* import LocalCafeIcon from "@material-ui/icons//LocalCafe"; */
 
 function Profile() {
+
+ 
+
+
+
+
   let { id } = useParams();
   let history = useHistory();
 
@@ -32,7 +38,10 @@ function Profile() {
       .get(`https://portfolioau777.herokuapp.com/posts/byuserId/${id}`)   //Retourne la liste des post par UserID + Set la clée  ListOfPost avec la liste des posts 
       .then((response) => {
         setListOfPosts(response.data);
+
      
+       
+      
 
       });
 
@@ -42,8 +51,7 @@ function Profile() {
    
   }, []);
 
-
-
+ 
 
   return ( <div className="containerpost">
     <div >
@@ -76,6 +84,14 @@ function Profile() {
 {/* Map de la liste enegistrée dan l'autState avec la clée listOfPosts */}
 
         {listOfPosts.map((value, key) => {
+
+
+  const date = new Date(value.createdAt);
+      
+      /*   console.log(new Intl.DateTimeFormat('fr-ca').format(date));  */
+
+
+
           return (
             <div  key={key}  className="post">
 
@@ -112,9 +128,11 @@ function Profile() {
               </div>
               <div className="footer">
                 <div className="textfooter">
-             {/*       {value.createdAt.replace('T', ' à ').slice(0, 18)} */}
+                 {/*   {value.createdAt.replace('T', ' à ').slice(0, 18)} */}
+{new Intl.DateTimeFormat('local').format(date)}
+             {/*  Le {new Intl.DateTimeFormat('local').format(value.createdAt)}  */}
 
-             Le {new Intl.DateTimeFormat('local').format(value.createAt)}
+       
               
                 </div>
 

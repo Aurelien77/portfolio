@@ -1,10 +1,11 @@
 
 import React, { Component } from "react";       //EXPERIENCE PROFESSIONELLES
 import Child5 from "./Child5";
-import Child6 from "./Child6";
+
 import Child7 from "./Child7";
-import Child8 from "./Child8";
+
 import Child9 from "./Child9";
+
 class Child1 extends Component {
   constructor() {
     super();
@@ -25,16 +26,12 @@ class Child1 extends Component {
       case "shchild5":
         this.setState({ shchild5: !this.state.shchild5 });
         break;
-        case "shchild6":
-          this.setState({ shchild6: !this.state.shchild6 });
-          break;
+      
           case "shchild7":
             this.setState({ shchild7: !this.state.shchild7 });
             break;
 
-            case "shchild8":
-              this.setState({ shchild8: !this.state.shchild8 });
-              break;
+          
 
               case "shchild9":
                 this.setState({ shchild9: !this.state.shchild9 });
@@ -43,13 +40,13 @@ class Child1 extends Component {
     }
   }
   render() {
-    const {  shchild5 , shchild6, shchild7, shchild8,shchild9 } = this.state;
+    const {  shchild5 , shchild7, shchild9 } = this.state;
     return (
             
 <div className="cvarriere">
 
             <div  onClick={() => this.hideComponent("shchild5")} className="inback" id="topteam">
-          Septembre 2016 à janvier 2011 : TOPTEAM filiale du groupe DEVOTEAM
+         <span className="datecv"> Septembre 2016 à janvier 2011 : </span> <span className="texttitrecv"> <span id="spantopteam">TOPTEAM</span> filiale du groupe<span id="spantopteam"> DEVOTEAM </span></span>
            
      
        
@@ -61,7 +58,7 @@ class Child1 extends Component {
         {shchild5 && <Child5/>}
            
            <div  onClick={() => this.hideComponent("shchild9")}id="videlio">
-          Février 2013 à Septembre 2016 : VIDELIO ancienement IEC
+           <span className="datecv"> Février 2013 à Septembre 2016 : </span> <span className="texttitrecv">  <span id="spantopteam"> VIDELIO </span> ancienement  <span id="spantopteam"> IEC </span></span>
            
      
        
@@ -71,7 +68,7 @@ class Child1 extends Component {
         </div> {shchild9 && <Child9 />}
 
         <div  onClick={() => this.hideComponent("shchild7")} id="jek">
-          Septembre 2007 à Aout 2008 : JEK INFORMATIQUE ET SERVICES
+        <span className="datecv">Septembre 2007 à Aout 2008 : </span> <span className="texttitrecv">  <span id="spantopteam">JEK INFORMATIQUE ET SERVICES </span></span>
            
      
        

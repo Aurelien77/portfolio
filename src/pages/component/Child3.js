@@ -10,7 +10,7 @@ class Child3 extends Component {
   }
   
   render() {
-    return <span>Lecture, Jardinage, Aquarium recifaux, Course à pied, Dessin</span>;
+    return <div className="hobbies2"><span className="texte">Aquariums recifaux, Course à pied, Jardinage, Dessin</span> </div>;
   }
 }
   

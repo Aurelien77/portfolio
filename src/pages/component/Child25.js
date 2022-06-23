@@ -24,7 +24,7 @@ class Child25 extends Component {
     const {  shchild25 } = this.state;
     return (
             
-      <div  >
+      <div className="textcv2" >
      Child 25
       
 

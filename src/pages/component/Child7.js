@@ -30,8 +30,8 @@ class Child7 extends Component {
   render() {
     const {  shchild24, shchild25, } = this.state;
     return (
-            <div>
-      <div onClick={() => this.hideComponent("shchild24")} className="jek" >
+            <span>
+      <div onClick={() => this.hideComponent("shchild24")} className="textcv2" >
     
       
      Septembre 2007 à Févier 2012 :  Prestataire de service pour le client SOCIETE GENERALE siège, La défense. 
@@ -42,7 +42,7 @@ class Child7 extends Component {
    </div > {shchild24 && <Child24 />}
       
  
-      <div onClick={() => this.hideComponent("shchild25")} className="jek">
+      <div onClick={() => this.hideComponent("shchild25")} className="textcv2">
     Autres
        
  
@@ -52,7 +52,7 @@ class Child7 extends Component {
      
     </div>  {shchild25 && <Child25 />}
       
-    </div>
+    </span>
     
   
  

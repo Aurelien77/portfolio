@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-
+import Child32 from "./Child32";
 class Child28 extends Component {
   constructor() {
     super();
     this.state = {
         name: "React",
-        shchild28: false,
+        shchild32: false,
         
       };
       this.hideComponent = this.hideComponent.bind(this);
@@ -13,26 +13,25 @@ class Child28 extends Component {
   hideComponent(varname) {
     console.log(varname);
     switch (varname) {
-      case "shchild28":
-        this.setState({ shchild28: !this.state.shchild28 });
+      case "shchild32":
+        this.setState({ shchild32: !this.state.shchild32 });
         break;
      
       default: return;
     }
   }
   render() {
-    const {  shchild28 } = this.state;
+    const {  shchild32 } = this.state;
     return (
             
-      <div  >
-     Child 28
-      
+      <span  onClick={() => this.hideComponent("shchild32")}  >
+  Formation d'infographie et de graphismes publicitaires
 
   
-      {shchild28 && <Child28 />}
+      {shchild32 && <Child32 />}
   
     
-   </div>
+   </span>
       
  
       
