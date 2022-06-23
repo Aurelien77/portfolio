@@ -40,7 +40,7 @@ class Child2 extends Component {
 
 <div className="cvform">
 
-<div  onClick={() => this.hideComponent("shchild26")} >
+<div  onClick={() => this.hideComponent("shchild26")} className="cursor" >
 Formation de dévellopement informatique
      Child 14
 
@@ -62,7 +62,7 @@ Formation de dévellopement informatique
 
 
 
-<div  onClick={() => this.hideComponent("shchild27")}>
+<div  onClick={() => this.hideComponent("shchild27")} className="cursor" >
 Formation de support informatique
       Child 15
 
@@ -73,7 +73,7 @@ Formation de support informatique
 
 </div> {shchild27 && <Child27 />}
 
-<div  onClick={() => this.hideComponent("shchild28")} >
+<div  onClick={() => this.hideComponent("shchild28")} className="cursor"  >
 Formation aux outils de création assistés par ordinateur
        child 16
 

@@ -46,7 +46,7 @@ class Child1 extends Component {
 <div className="cvarriere">
 
             <div  onClick={() => this.hideComponent("shchild5")} className="inback" id="topteam">
-         <span className="datecv"> Septembre 2016 à janvier 2011 : </span> <span className="texttitrecv"> <span id="spantopteam">TOPTEAM</span> filiale du groupe<span id="spantopteam"> DEVOTEAM </span></span>
+         <span className="datecv"> 1 ➡️ Septembre 2016 à janvier 2011 : </span> <span className="texttitrecv"> <span id="spantopteam">TOPTEAM</span> filiale du groupe<span id="spantopteam"> DEVOTEAM </span></span>
            
      
        
@@ -58,7 +58,7 @@ class Child1 extends Component {
         {shchild5 && <Child5/>}
            
            <div  onClick={() => this.hideComponent("shchild9")}id="videlio">
-           <span className="datecv"> Février 2013 à Septembre 2016 : </span> <span className="texttitrecv">  <span id="spantopteam"> VIDELIO </span> ancienement  <span id="spantopteam"> IEC </span></span>
+           <span className="datecv"> 2 ➡️Février 2013 à Septembre 2016 : </span> <span className="texttitrecv">  <span id="spantopteam"> VIDELIO </span> ancienement  <span id="spantopteam"> IEC </span></span>
            
      
        
@@ -68,7 +68,7 @@ class Child1 extends Component {
         </div> {shchild9 && <Child9 />}
 
         <div  onClick={() => this.hideComponent("shchild7")} id="jek">
-        <span className="datecv">Septembre 2007 à Aout 2008 : </span> <span className="texttitrecv">  <span id="spantopteam">JEK INFORMATIQUE ET SERVICES </span></span>
+        <span className="datecv">3 ➡️Septembre 2007 à Aout 2008 : </span> <span className="texttitrecv">  <span id="spantopteam">JEK INFORMATIQUE ET SERVICES </span></span>
            
      
        

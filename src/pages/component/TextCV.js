@@ -66,13 +66,13 @@ class TextCV extends Component {
 <div className="ex">
 
 
-            <div  onClick={() => this.hideComponent("shchild1")} id="expro">
+            <div  onClick={() => this.hideComponent("shchild1")} id="expro">💎
             EXPERIENCES 
             </div>
             
             {shchild1 && <Child1 />}
            
-          <div onClick={() => this.hideComponent("shchild2")}id="formation">
+          <div onClick={() => this.hideComponent("shchild2")}id="formation">🏳️
           FORMATIONS
           </div>
           
@@ -82,7 +82,7 @@ class TextCV extends Component {
 
 
 
-          <div onClick={() => this.hideComponent("shchild3")} id="hobbies">
+          <div onClick={() => this.hideComponent("shchild3")} id="hobbies">🐠
          HOBBIES
             </div>
             
