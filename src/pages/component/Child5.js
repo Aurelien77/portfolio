@@ -79,7 +79,7 @@ class Child5 extends Component {
 
    
 <span  onClick={() => this.hideComponent("shchild17")}  >
-<span  className="textcv2">1- Janvier 2019  à Janvier 2021  : Prestataire de service chez le client :<span id="spantopteam"><span>Carrefour</span></span>
+<span  className="textcv2">👉 1- Janvier 2019  à Janvier 2021  : Prestataire de service chez le client<span className="entreprise"><span> Carrefour, Evry.</span></span>
 
 
 
@@ -101,8 +101,8 @@ class Child5 extends Component {
  <br></br>
 
 <span  onClick={() => this.hideComponent("shchild18")}  >
-<span  className="textcv2">2- Décembre 2017  à Janvier 2019 :
-Prestataire de service chez le client <span id="spantopteam"><span>Natixis</span> </span></span>
+<span  className="textcv2">👉 2- Décembre 2017  à Janvier 2019 :
+Prestataire de service chez le client<span className="entreprise"><span> Natixis, Charenton-le-pont.</span> </span></span>
 
 
 
@@ -112,14 +112,14 @@ Prestataire de service chez le client <span id="spantopteam"><span>Natixis</span
 </span>
       <br></br>
  
-      <span onClick={() => this.hideComponent("shchild19")} > <span  className="textcv2"> 3- Décembre 2016  à Décembre 2017 : Prestataire de service chez le client : <span id="spantopteam"> <span>BNP Paribas </span> </span></span>
+      <span onClick={() => this.hideComponent("shchild19")} > <span  className="textcv2"> 👉 3- Décembre 2016  à Décembre 2017 : Prestataire de service chez le client<span className="entreprise"> <span> BNP Paribas, Paris 75009. </span> </span></span>
 
      {shchild19 && <Child19 />}
     
       </span>   <br></br>
 
 
-      <span onClick={() => this.hideComponent("shchild20")}  > <span  className="textcv2"> 4- Septembre 2016  à Decembre 2016  :   Prestataire de service chez le client :<span id="spantopteam"> <span>Sanofi</span>  </span> </span>
+      <span onClick={() => this.hideComponent("shchild20")}  > <span  className="textcv2"> 👉 4- Septembre 2016  à Decembre 2016  :   Prestataire de service chez le client<span className="entreprise"> <span> Sanofi, La croix Berny</span>  </span> </span>
      
        
       

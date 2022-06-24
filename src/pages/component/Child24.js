@@ -23,7 +23,7 @@ class Child24 extends Component {
   render() {
     const {  shchild24 } = this.state;
     return (
-      <div className="textcv4" >  Technicien Informatique (9000 utilisateurs).
+      <div className="textcv4">  Technicien Informatique (9000 utilisateurs).
       service DPL PC / D2D (day to day)
       
       Dans Bureaux et salles de marchés : Résolution au jour le jour des demandes client concernant l'installation et le remplacements de postes informatiques. Prise de contact avec les utilisateurs pour transfert de leur configuration informatique, connexion a distance sur leur matériel.

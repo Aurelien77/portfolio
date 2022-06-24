@@ -40,9 +40,8 @@ class Child9 extends Component {
 
 
               
-      <span  onClick={() => this.hideComponent("shchild21")} className="textcv2">
-      1- janvier 2015  à Septembre 2016 :  Videlio Siège, Gennevilliers.
-      child 9
+      <span  onClick={() => this.hideComponent("shchild21")} className="textcv2">👉 1- janvier 2015  à Septembre 2016 : Préstataire de service chez le client <span className="entreprise"> Videlio Siège, Gennevilliers.</span>
+     
 
   
       
@@ -53,8 +52,8 @@ class Child9 extends Component {
    {shchild21 && <Child21 />}  <br></br>
     
 
-<span onClick={() => this.hideComponent("shchild22")} className="textcv2" >2- Préstataire de service chez le client BNP PARIBAS Siège, Paris. 
-Child 10
+<span onClick={() => this.hideComponent("shchild22")} className="textcv2" >👉 2- Mai 2014  à janvier 2015 : Préstataire de service chez le client <span className="entreprise">BNP PARIBAS Siège, Paris.</span> 
+
  
 
 
@@ -64,8 +63,8 @@ Child 10
 </span> {shchild22 && <Child22 />}  <br></br>
       
  
-      <span onClick={() => this.hideComponent("shchild23")} className="textcv2">3- Préstataire de service chez le client Ministère de l'économie, Bercy. 
-      Child 11
+      <span onClick={() => this.hideComponent("shchild23")} className="textcv2">👉 3- janvier 2015  à Septembre 2016 : Préstataire de service chez le client <span className="entreprise"> Ministère de l'économie, Bercy. </span>
+     
        
       
       

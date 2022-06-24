@@ -1498,6 +1498,7 @@ span {
 
 #listeclients {
   border-radius: 12%;
+  padding-bottom: 1%;
   /* background-color: #0d11e9; */
   box-shadow: 0px 0px silver, 0px 0px 0px black;
 }
@@ -1579,8 +1580,8 @@ span {
    margin-right:10%; */
   color: white;
   font-family: "Clicker Script", cursive;
-  font-weight: 1000;
-  font-size: 3rem;
+  font-weight: 800;
+  font-size: 3.5rem;
 }
 .formation:hover {
   cursor: pointer;
@@ -1626,6 +1627,10 @@ span {
   margin-right: 15%;
 }
 .ex .textcv4 {
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+  padding: 1%;
   font-weight: 500;
   font-size: 1.2rem;
   color: black;
@@ -1638,6 +1643,9 @@ span {
 .ex #spantopteam {
   font-size: 1.7rem;
   color: rgb(32, 19, 227);
+}
+.ex .entreprise {
+  font-size: 1.7rem;
 }
 .ex #topteam {
   background-color: rgb(162, 160, 160);
