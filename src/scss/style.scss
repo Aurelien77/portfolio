@@ -1841,6 +1841,9 @@ text-align: center;
 .formation {
 
   color: white;
+  font-family: 'Clicker Script', cursive; 
+font-weight: 1000;
+font-size: 2rem;
   &:hover{
     cursor: pointer;
 
@@ -1856,11 +1859,17 @@ color: black;
 }
 
 & .datecv2 {
-
+ 
   font-size: 1rem;
-  color: black;
-  
-  }
+ color: white;
+ font-weight: 900; 
+ -webkit-text-stroke: 0.2px red;
+ &:hover{
+
+  cursor: pointer;
+ }
+
+}
 & .texttitrecv {
 
   font-size: 1.5rem;
@@ -1872,10 +1881,41 @@ color: black;
   & .textcv2 {
 
     font-size: 1.2rem;
-    color: black;
-   
+    color: white;
+ font-weight: 900; -webkit-text-stroke: 0.2px red;
+   &:hover{
+
+    cursor: pointer;
+   }
+  }
+   & .textcv3 {
+    background: linear-gradient(to bottom, rgba(91, 163, 250, 0.5), rgba(3, 16, 91, 0.5)), no-repeat center /cover; 
+
+
+  /*   background-image: linear-gradient(to bottom,30deg, rgba(93,93,93, 0.1) 0px, rgba(93,93,93, 0.1) 3.5px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(20, 44, 200),rgb(76, 128, 241)); */
+    font-size: 0.9rem;
+    color: white;
+ font-weight: 900;
+background-color: #2e31f1;
+margin-left: 15%;
+margin-right: 15%;
+   &:hover{
+
+    
+   }
     
     }
+
+    & .textcv4 {
+font-weight: 500;
+      font-size: 1.2rem;
+      color: black;
+      background-color: white;
+  /*  font-weight: 900; -webkit-text-stroke: 0.2px red; */
+     &:hover{
+  
+      cursor: pointer;
+     }}
   & #spantopteam {
     font-size: 1.7rem;
     color: rgb(32, 19, 227);
@@ -1887,6 +1927,7 @@ color: black;
    background-image: repeating-linear-gradient(30deg, rgba(93,93,93, 0.1) 0px, rgba(93,93,93, 0.1) 3.5px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
 border: #5e5555 solid 1px;
 box-shadow: 1px 1px silver, 0em 0 0.12em black;
+
     &:hover {
       cursor: pointer;
       filter: sepia(60%);
@@ -1896,8 +1937,13 @@ box-shadow: 1px 1px silver, 0em 0 0.12em black;
 
   }
 
-  & .topteam2 {
- 
+  & .fond {
+    & span {
+
+
+      background-color : rgb(25, 120, 236);
+      border-radius: 5%;
+    }
         &:hover {
           cursor: pointer;
           filter: sepia(60%);
@@ -1952,23 +1998,45 @@ box-shadow: 1px 1px silver, 0em 0 0.12em black;
 
 
   }
-  & .cvarriere {
-    background: url(../logos/ex.png) no-repeat center top/cover;
-  
 
+  & .cvarriere {
+    /* background: url(../logos/ex.png) no-repeat center top/cover; */
+ /* background-image : linear-gradient(135deg, #87e0fd 0%, #53cbf1 40%, #05abe0 100%);; */
+
+ background: linear-gradient(to bottom, rgba(91, 163, 250, 0.5), rgba(3, 16, 91, 0.5)), url(../logos/herbe.gif) no-repeat center /cover;
+/*   background-blend-mode: darken;   */
     box-shadow: 1px 1px silver, 0em 0 0.5em black;
+  
+  }
+  & .cvarrieresans {
+    /* background: url(../logos/ex.png) no-repeat center top/cover; */
+ /* background-image : linear-gradient(135deg, #87e0fd 0%, #53cbf1 40%, #05abe0 100%);; */
+
+ background: linear-gradient(to bottom, rgba(91, 163, 250, 0.5), rgba(3, 16, 91, 0.5));
+/*   background-blend-mode: darken;   */
+    box-shadow: 1px 1px silver, 0em 0 0.5em black;
+  
   }
 
   & .cvform {
   background-position: 55% 75%;
-    background-image: url(../logos/tableau2.png) ;
+margin-left: 5%;
+margin-right: 5%;
+border-radius: 5%;
+  background: url(../logos/tableau2.png) no-repeat center /cover;
+   /*  background-image: url(../logos/tableau2.png) ; */
+    
     box-shadow: 1px 1px silver, 0em 0 0.5em black;
   }
 
  & .tableau {
 /* background-color: #0de918; */
- padding-left: 7%;
- padding-right:7%;
+ padding-left: 10%;
+ padding-right:10%;
+padding-bottom: 10%;
+font-family: 'Clicker Script', cursive; 
+font-weight: 800;
+
  }
 & .hobbies2 {
   & span{

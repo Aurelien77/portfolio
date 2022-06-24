@@ -29,8 +29,7 @@ class Child7 extends Component {
   }
   render() {
     const {  shchild24, shchild25, } = this.state;
-    return (
-            <div id="listeclient3">
+    return (<div id="listeclients" className="textcv3">
       <span onClick={() => this.hideComponent("shchild24")} className="textcv2" >
     
       

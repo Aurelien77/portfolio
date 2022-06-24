@@ -24,7 +24,7 @@ class Child20 extends Component {
     const {  shchild20 } = this.state;
     return (
             
-      <div className="textcv2" >
+      <div className="textcv4" > <br></br>
      Technicien visioconference N2 / Coordinateur
 Intervention pour résoudre les incidents de visioconférence, fournis par l’outil de ticketing ou grâce à l'enquête ipads présente dans toutes les salles de visioconférence.
 Coordinateur des techniciens locaux pour l'établissement des tests et la résolution des incidents.

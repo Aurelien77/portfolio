@@ -45,7 +45,7 @@ class Child1 extends Component {
             
 <div className="cvarriere">
 
-            <div  onClick={() => this.hideComponent("shchild5")} className="inback" id="topteam">
+            <div  onClick={() => this.hideComponent("shchild5")}  id="topteam">
          <span className="datecv"> 1 ➡️ Septembre 2016 à janvier 2011 : </span> <span className="texttitrecv"> <span id="spantopteam">TOPTEAM</span> filiale du groupe<span id="spantopteam"> DEVOTEAM </span></span>
            
      

@@ -24,7 +24,7 @@ class Child19 extends Component {
     const {  shchild19 } = this.state;
     return (
             
-      <div  className="textcv2" > {/* {shchild19 && <Child19 />} */}
+      <div  className="textcv4" > {/* {shchild19 && <Child19 />} */} <br></br>
     Technicien Support Informatique Intervention en proximité pour la résolution de tous types d'incidents liés sur environnment windows 7.
 Installation des postes informatique des nouveaux arrivants.
 Télédistribution d'application via serveur SCCM.

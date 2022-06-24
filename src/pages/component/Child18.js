@@ -22,9 +22,7 @@ class Child18 extends Component {
   }
   render() {
     const {  shchild18 } = this.state;
-    return (
-            
-      <div className="textcv2"  >
+    return (<div className="textcv4"  ><br></br>
      Technicien Support Helpdesk Prise d'appels Hotline et résolution des incidents par prise en mains à distances du matériel sur envirironnement windows 7/10/365.
 Télédistribution d'application via serveur SCCM.
 Création et suivi des tickets via l'outil de tikecting "Service-now".

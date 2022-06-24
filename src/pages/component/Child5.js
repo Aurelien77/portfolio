@@ -70,7 +70,7 @@ class Child5 extends Component {
   render() {
     const {  shchild5, shchild6, shchild7, shchild8,  shchild17,shchild18,shchild19,shchild20,} = this.state;
     return (
-            <div id="listeclients">
+            <div id="listeclients" className="textcv3">
 
 
 
@@ -79,7 +79,11 @@ class Child5 extends Component {
 
    
 <span  onClick={() => this.hideComponent("shchild17")}  >
-<span  className="datecv2">Janvier 2019  à Janvier 2021  :</span>  <span className="textcv2"> Prestataire de service chez le client <span id="spantopteam">Carrefour</span></span>
+<span  className="textcv2">1- Janvier 2019  à Janvier 2021  : Prestataire de service chez le client :<span id="spantopteam"><span>Carrefour</span></span>
+
+
+
+</span>
       
      
            
@@ -96,9 +100,9 @@ class Child5 extends Component {
 
  <br></br>
 
-<span  onClick={() => this.hideComponent("shchild18")} >
-<span  className="datecv2"> Décembre 2017  à Janvier 2019 : </span>  <span className="textcv2">
-Prestataire de service chez le client <span id="spantopteam">Natixis </span></span>
+<span  onClick={() => this.hideComponent("shchild18")}  >
+<span  className="textcv2">2- Décembre 2017  à Janvier 2019 :
+Prestataire de service chez le client <span id="spantopteam"><span>Natixis</span> </span></span>
 
 
 
@@ -108,14 +112,14 @@ Prestataire de service chez le client <span id="spantopteam">Natixis </span></sp
 </span>
       <br></br>
  
-      <span onClick={() => this.hideComponent("shchild19")} className="topteam2"> <span className="datecv2"> Décembre 2016  à Décembre 2017 : </span> <span className="textcv2"> Prestataire de service chez le client <span id="spantopteam"> BNP Paribas </span></span>
+      <span onClick={() => this.hideComponent("shchild19")} > <span  className="textcv2"> 3- Décembre 2016  à Décembre 2017 : Prestataire de service chez le client : <span id="spantopteam"> <span>BNP Paribas </span> </span></span>
 
      {shchild19 && <Child19 />}
     
       </span>   <br></br>
 
 
-      <span onClick={() => this.hideComponent("shchild20")} className="topteam2" > <span  className="datecv2"> Septembre 2016  à Decembre 2016  :  </span><span className="textcv2"> Prestataire de service chez le clie <span id="spantopteam">  Sanofi </span> </span>
+      <span onClick={() => this.hideComponent("shchild20")}  > <span  className="textcv2"> 4- Septembre 2016  à Decembre 2016  :   Prestataire de service chez le client :<span id="spantopteam"> <span>Sanofi</span>  </span> </span>
      
        
       

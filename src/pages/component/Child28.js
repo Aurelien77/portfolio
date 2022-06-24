@@ -24,7 +24,7 @@ class Child28 extends Component {
     const {  shchild32 } = this.state;
     return (
             
-      <span  onClick={() => this.hideComponent("shchild32")} className="cursor" >
+      <span  onClick={() => this.hideComponent("shchild32")} className="formation" >
   Formation d'infographie et de graphismes publicitaires
 
   

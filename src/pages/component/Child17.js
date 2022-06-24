@@ -22,10 +22,7 @@ class Child17 extends Component {
   }
   render() {
     const {  shchild17 } = this.state;
-    return (
-            
-      <div className="textcv2" > 
-   Technicien Support machines virtuelles michrosoft hyper V Résolution de dysfonctionnement sur l’infrastructure virtuelle , Scripting Powershell (automatisation) 
+    return (<div className="textcv4" ><br></br>Technicien Support machines virtuelles michrosoft hyper V Résolution de dysfonctionnement sur l’infrastructure virtuelle , Scripting Powershell (automatisation) 
       
    Child17
   

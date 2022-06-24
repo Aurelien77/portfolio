@@ -25,7 +25,7 @@ class Child31 extends Component {
     const {  shchild31 } = this.state;
     return (
             
-      <span  ><br></br>Déscriptif des autres formations
+      <span className="formation" ><br></br>Déscriptif des autres formations
       
 
   

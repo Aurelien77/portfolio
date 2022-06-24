@@ -31,9 +31,9 @@ class Child27 extends Component {
   render() {
     const {  shchild30,shchild31 } = this.state;
     return (
-            <span className="tableau ">
-      <span onClick={() => this.hideComponent("shchild30")} className="cursor" >
-      --TSSI : Technicien supérieur de support informatique child 27--
+            <span className="tableau">
+      <span onClick={() => this.hideComponent("shchild30")} className="formation" >
+      --Tssi : Technicien supérieur de support informatique child 27--
      <br></br>
 
   
@@ -42,7 +42,7 @@ class Child27 extends Component {
     
    </span>{shchild30 && <Child30 />}
       
-      <span onClick={() => this.hideComponent("shchild31")} className="cursor">
+      <span onClick={() => this.hideComponent("shchild31")} className="formation">
         <br></br>
      --Autres-- child 31
       
