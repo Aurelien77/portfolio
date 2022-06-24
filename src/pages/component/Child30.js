@@ -25,8 +25,32 @@ class Child30 extends Component {
     return (
             
       <span className="formation"><br></br> 
-    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-      
+<u>1- Intervenir et assister à distance en centre de services informatiques</u> <br></br>
+- Assister les utilisateurs dans un environnement informatique et numérique <br></br>
+- Configurer et mettre à jour un poste de travail informatique <br></br>
+- Traiter un incident dans un centre de services <br></br> 
+- Proposer et mettre en œuvre des solutions d'équipements et de services <br></br>
+- Participer au suivi de parc et à la gestion des configurations informatiques <br></br>
+- Mettre en œuvre et maintenir des machines virtuelles <br></br>
+<u>2-Intervenir et assister sur les systèmes et les réseaux informatiques </u><br></br> 
+- Intervenir sur une infrastructure de réseau TCP/IP <br></br> 
+- Intervenir sur une infrastructure de réseau sécurisé <br></br> 
+- Télé-administrer et dépanner un serveur  <br></br>
+- Intervenir sur un service d'annuaire de réseau <br></br> 
+- Automatiser des tâches à l'aide de scripts <br></br> 
+- Déployer des postes de travail sur un réseau d'entreprise <br></br> 
+- Contribuer à la gestion des problèmes informatique <br></br> 
+<u>3-Intervenir et assister sur les applications informatiques transverses </u> <br></br> 
+- Intervenir sur un système de messagerie informatique <br></br> 
+- Intervenir sur un serveur de base de données <br></br> 
+- Identifier un dysfonctionnement dans une architecture distribuée <br></br> 
+- Suivre les indicateurs de qualité de service et la relation client <br></br> 
+- Organiser et développer la veille technologique en informatique <br></br> 
+<u>4- Utiliser l'anglais dans son activité professionnelle en informatique </u><br></br> 
+
+<u>Matières des cours </u><br></br> 
+Administration Systèmes et Serveurs/Sécurité informatique <br></br> 
+Bureautique/Support Client/Gestion de parc/Scripting/Anglais.
 
     <br></br> 
       {shchild30&& <Child30 />}

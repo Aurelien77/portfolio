@@ -25,7 +25,7 @@ class Child28 extends Component {
     return (
             
       <span  onClick={() => this.hideComponent("shchild32")} className="formation" >
-  Formation d'infographie et de graphismes publicitaires
+  --Formation d'infographie et de graphismes publicitaires---
 
   
       {shchild32 && <Child32 />}

@@ -24,16 +24,15 @@ class Child32 extends Component {
     const {  shchild32 } = this.state;
     return (
     
-      <span className="tableau">  <br></br>  <br></br>Déscriptif formation d'infographie
-Nec philosophus efflaturus Eusebium quaestor qui et Emissa hi intepesceret agitari si qui ostendens concitatus Pittacas Epigonum nec Eusebium conperissent hi si hos cognomento intepesceret ab aliquotiens inter si agitari insimulasset hos efflaturus <br>
-</br>sed manus insimulasset concitatus hos manus ducitur et hi fabricarum sint fabricarum Eusebium nec dignitatem si res sed Epigonus non ostendens cum res insimulasset res agitari fabricarum intepesceret res efflaturus et ducitur non industria <br>
-</br>armorum et dignitatem orator novas industria Eusebius hos non inter cum cum agitari sint dilancinantium concitatus ostendens efflaturus insimulasset Epigonum tribunos Pittacas quaestor ab dilancinantium cognomento agitari Epigonus et ostendens ostendens quia hi.
-<br></br>
-<br></br>
+      <span className="tableau">  <br></br>  
+
+
+Formation aux métiers des arts appliqués, conception de maquettes publicitaires. Montages photos et mise en pages de journaux ; magazines, création d’illustrations et de logos.<br></br>
+
   
       {shchild32 && <Child32 />}
   
-    
+      <br></br> 
    </span>
       
  

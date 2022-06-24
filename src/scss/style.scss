@@ -1831,7 +1831,7 @@ text-align: center;
   
 }
 .cursor {
-
+  
   &:hover{
     cursor: pointer;
 
@@ -1839,11 +1839,12 @@ text-align: center;
 
 }
 .formation {
-
+ /* margin-left: 10%;
+  margin-right:10%; */
   color: white;
   font-family: 'Clicker Script', cursive; 
 font-weight: 1000;
-font-size: 2rem;
+font-size: 3rem;
   &:hover{
     cursor: pointer;
 
@@ -1907,6 +1908,7 @@ margin-right: 15%;
     }
 
     & .textcv4 {
+      
 font-weight: 500;
       font-size: 1.2rem;
       color: black;
@@ -1938,6 +1940,8 @@ box-shadow: 1px 1px silver, 0em 0 0.12em black;
   }
 
   & .fond {
+
+
     & span {
 
 
@@ -2027,17 +2031,25 @@ border-radius: 5%;
    /*  background-image: url(../logos/tableau2.png) ; */
     
     box-shadow: 1px 1px silver, 0em 0 0.5em black;
+    & .tableau {
+      /* background-color: #0de918; */
+    display: grid;
+       padding-left: 10%;
+       padding-right:10%;
+      padding-bottom: 2%;
+      font-family: 'Clicker Script', cursive; 
+      font-weight: 800;
+      & span{
+     
+
+
+      }
+       }
+
+      
   }
 
- & .tableau {
-/* background-color: #0de918; */
- padding-left: 10%;
- padding-right:10%;
-padding-bottom: 10%;
-font-family: 'Clicker Script', cursive; 
-font-weight: 800;
 
- }
 & .hobbies2 {
   & span{
    

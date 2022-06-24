@@ -24,11 +24,15 @@ class Child29 extends Component {
     const {  shchild29 } = this.state;
     return (
             
-      <span className="tableau"><br></br><br></br>
-    Déscriptif de la formation  : Child 29 <br></br><br></br>
-    What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
+      <span className="tableau"><br></br>
+  <u >Réalisation de 6 projets WEB </u>
+    
+1- Transformez une maquette en site web avec HTML & CSS<br></br>
+2- Dynamisez une page web avec des animations CSS<br></br>
+3- Optimisez un site web existant<br></br>
+4- Construisez un site e-commerce en JavaScript<br></br>
+5- Construisez une API sécurisée pour une application d'avis gastronomiques<br></br>
+6- Créez un réseau social d’entreprise
       
 
   

@@ -1575,10 +1575,12 @@ span {
 }
 
 .formation {
+  /* margin-left: 10%;
+   margin-right:10%; */
   color: white;
   font-family: "Clicker Script", cursive;
   font-weight: 1000;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .formation:hover {
   cursor: pointer;
@@ -1700,11 +1702,12 @@ span {
   /*  background-image: url(../logos/tableau2.png) ; */
   box-shadow: 1px 1px silver, 0em 0 0.5em black;
 }
-.ex .tableau {
+.ex .cvform .tableau {
   /* background-color: #0de918; */
+  display: grid;
   padding-left: 10%;
   padding-right: 10%;
-  padding-bottom: 10%;
+  padding-bottom: 2%;
   font-family: "Clicker Script", cursive;
   font-weight: 800;
 }
