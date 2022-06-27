@@ -534,9 +534,12 @@ h1 {
   flex-direction: column-reverse;
   border-radius: 15px;
   box-shadow: rgb(33, 11, 133) 0px 0px 100px;
-  background-image: url(../logos/formes.gif);
-  background-position: center bottom, left top;
-  background-repeat: repeat;
+  background: radial-gradient(rgb(9, 224, 35) 3px, transparent 4px), radial-gradient(rgb(32, 90, 251) 3px, transparent 4px), linear-gradient(rgb(255, 255, 255) 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #4704f1 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
+  background-position-x: 0%, 0%, 0%, 0%, 0%, 0%;
+  background-position-y: 0%, 0%, 0%, 0%, 0%, 0%;
+  background-size: auto, auto, auto, auto, auto, auto;
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
   width: 100%;
   height: 100%;
   align-items: center;
@@ -545,6 +548,7 @@ h1 {
 .containerpost .post {
   display: flex;
   flex-direction: column;
+  margin-top: 1%;
   width: 50vw;
   height: 100%;
   border-radius: 10px;
@@ -1134,12 +1138,6 @@ span {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "L" "F";
 }
-@media only screen and (max-width: 1500px) and (min-width: 0px) {
-  .knowledges .knowledgesContent .languagesFrameworks {
-    margin-bottom: 10%;
-    padding: 1%;
-  }
-}
 .knowledges .knowledgesContent .languagesFrameworks:hover {
   /*   box-shadow: 1px 1px rgb(233, 9, 9), -0.2em 0 0.2em rgb(243, 239, 239); */
 }
@@ -1180,9 +1178,21 @@ span {
   width: 1px;
   transform: translate(9px, 19px);
 }
+@media only screen and (max-width: 1500px) and (min-width: 0px) {
+  .knowledges .knowledgesContent .languagesFrameworks .years span:nth-child(2):before, .knowledges .knowledgesContent .languagesFrameworks .years span:nth-child(3):before {
+    height: 125px;
+  }
+}
 .knowledges .knowledgesContent .languagesFrameworks .languagesList {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+@media only screen and (max-width: 1500px) and (min-width: 0px) {
+  .knowledges .knowledgesContent .languagesFrameworks .languagesList {
+    margin-bottom: 10%;
+    padding: 1%;
+    height: 2vw;
+  }
 }
 .knowledges .knowledgesContent .languagesFrameworks .languagesList li {
   text-align: left;

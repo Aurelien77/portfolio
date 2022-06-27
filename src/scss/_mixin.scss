@@ -10,11 +10,20 @@
    
   padding: 1%;
  
+ height: 2vw;
+ }
+ }
+
+ @mixin mobilecompetenceslignes {
+  @media only screen and (max-width:$ipadmaxmenu  )  and (min-width:0px  )  {
  
+
+ 
+ 
+ 
+ height: 125px;
  }
  }
-
-
 
 
 @mixin ipad-ajustement_menu_text {
