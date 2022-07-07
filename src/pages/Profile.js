@@ -92,7 +92,18 @@ function Profile() {
 
 
 
-          return (
+          return (<div>
+    
+            <div className="animation2">
+             
+        
+        
+            
+                   <div class="animation2__ball animation2__ball1"><i class="fas"></i></div>
+                  {/*  <div class="animation2__ball animation2__ball2"> <i class="fas"></i></div>
+                   <div class="animation2__ball animation2__ball3"><i class="fas"></i></div> */}
+                 
+                 </div>
             <div  key={key}  className="post">
 
 
@@ -144,7 +155,7 @@ function Profile() {
                   </div>
                 </div> */}
               </div>
-            </div>  
+            </div>  </div>
           );
         })}
       </div></div>

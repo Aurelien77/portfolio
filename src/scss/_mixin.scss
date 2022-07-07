@@ -1,5 +1,44 @@
 
+@mixin centrer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin icharg {
 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 26px;
+    margin: 20px;
+
+}
+@mixin grand-ecran-ajustement_background {
+  @media only screen and (min-width:1600px  )    {
+
+
+
+
+    height: 50%;
+    width: 50%;
+
+
+ }
+}
+
+
+@mixin smartphone-ajustement_background {
+  @media only screen and (max-width:800px  )    {
+
+
+
+
+    height: 10%;
+    width: 10%;
+
+
+ }
+}
 
 @mixin mobilecompetences {
   @media only screen and (max-width:$ipadmaxmenu  )  and (min-width:0px  )  {
@@ -13,6 +52,18 @@
  height: 2vw;
  }
  }
+ @mixin ipad-ajustement_background {
+  @media only screen and (min-width:800px  ) and (max-width:1000px  )    {
+
+
+
+
+    height: 20%;
+    width: 20%;
+
+
+ }
+}
 
  @mixin mobilecompetenceslignes {
   @media only screen and (max-width:$ipadmaxmenu  )  and (min-width:0px  )  {

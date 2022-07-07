@@ -3,8 +3,64 @@
 @import "base";
 @import "mixin";
 
+@import "keyframe";
+.animation2 {
+  /*   animation:  progressif;
+    animation-delay: 20s; */
+ margin-top: 10%;
+  /*   display: flex; */
+    position: fixed;
+ 
+   /*  margin-top: 10%; */
+   border-radius: 20%;
+    width: 45%;
+    height: 50%;
+  /*   background-color: white; */
+    animation: loader 30s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both; 
+    z-index: 1;
+    @include centrer; 
+   
+    &__bloc {
+      background-color: #0de918;
+      display: flex;
+      width: 100%;
+      @include icharg;
+    }
+    &__ball {
+      @include ipad-ajustement_background;
+      @include smartphone-ajustement_background;
+      @include grand-ecran-ajustement_background;
 
-
+    background-image: url(../logos/2Cwq2.gif);
+      background-position-x: center;
+      background-position-y: center; 
+     /*  background-size: auto; */
+    background-size: cover;
+   /*  background-position: auto;  */
+    background-repeat: no-repeat;
+      height: 100%;
+      width: 100%; 
+      /* border-radius: 15%; */
+      /* animation: bounceIn 1s;
+      animation-iteration-count: 10; */
+    
+    }
+  
+    &__ball1 {
+    
+      
+     /*  background-color: green; */
+      animation-delay: 0.5s;
+      margin: 2px;
+      width: 30%;
+      border-radius: 50%;
+    }
+  
+  
+  
+  }
 
 
 
@@ -544,6 +600,9 @@ background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
   align-items: center;
   word-wrap: break-word;
 & .post {
+  animation: progressif 15s ; 
+  animation: loading 2s; 
+  animation: move 7s  ; 
   display: flex;
   flex-direction: column;
   margin-top: 1%;
