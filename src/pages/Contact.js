@@ -14,7 +14,7 @@ const Contact = () => {
    <h1>Contactez-moi</h1> 
     </div>
     <div>
-    <i className='fas fa-map-marker-alt'>Ma ville : 77700</i>
+    <i className='fas fa-map-marker-alt'> Ma ville : 77700</i>
 </div>
 
 
@@ -22,7 +22,7 @@ const Contact = () => {
 <i className='fas fa-mobile-alt'></i> 
 <CopyToClipboard text= "07 82 36 60 20">
 
- <span className='clickInput' onClick = {() =>  { alert ('Le numéro de téléphone à été copié dans le press papier');}}    > 07 .. .. .. .. </span>
+ <span className='clickInput' onClick = {() =>  { alert ('Le numéro de téléphone à été copié dans le press papier');}}    > 07 82 36 60 20 </span>
 
 </CopyToClipboard>
 </div> 
@@ -30,7 +30,7 @@ const Contact = () => {
 
 <div>
 
-<i className='fas fa-envelope' href="aurelien.monceau@gmail.com">aurelien.monceau@gmail.com</i>
+<i className='fas fa-envelope' href="aurelien.monceau@gmail.com"> aurelien.monceau@gmail.com</i>
 
 </div>
 

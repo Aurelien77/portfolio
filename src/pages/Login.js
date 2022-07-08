@@ -3,7 +3,7 @@ import axios from "axios";
 import { useHistory } from "react-router-dom";
 import { AuthContext } from "../helpers/AuthContext";
 
-import logo from "../logos/qr.png";
+import logo from "../logos/2Cwq.gif";
 function Login() {
   const [username, setUsername] = useState("");
   /* const [email, setemail] = useState(""); */

@@ -30,7 +30,7 @@
     }
     &__ball {
    
-      @include smartphone-ajustement_background;
+     /*  @include smartphone-ajustement_background; */
    /*    @include grand-ecran-ajustement_background; */
       @include ipad-ajustement_background;
 
@@ -565,8 +565,13 @@ padding: 0%;
 
 
 // PAGE LISTE DES POSTS POUR CHAQUES UTILISATEURS    /   PAGE HOME 
+.flexportfolio {
+
+display: flex;
+flex-direction: column-reverse;
 
 
+}
 
 .containerpost {
 
@@ -1257,7 +1262,7 @@ margin-top: 5%;
 margin-bottom: 5%;
 width: 30%;
 height: 45%;
-
+border-radius: 50%;
 
   }
 

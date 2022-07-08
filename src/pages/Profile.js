@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import axios from "axios";
 import { AuthContext } from "../helpers/AuthContext";
-import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
+
 /* import LocalCafeIcon from "@material-ui/icons//LocalCafe"; */
 
 function Profile() {
@@ -15,8 +15,8 @@ function Profile() {
   let { id } = useParams();
   let history = useHistory();
 
-  const [username, setUsername] = useState("");      //Set authState avec la réponse de basicinfo + Username
-  const [photo_profil, setphoto_profil] = useState("");  //Set authState avec la réponse de basicinfo + Photo
+  const [username, setUsername] = useState("");     
+  const [photo_profil, setphoto_profil] = useState("");  
   const [listOfPosts, setListOfPosts] = useState([]);
   const { authState } = useContext(AuthContext);
 
@@ -35,7 +35,7 @@ function Profile() {
       });
 
     axios
-      .get(`https://portfolioau777.herokuapp.com/posts/byuserId/${id}`)   //Retourne la liste des post par UserID + Set la clée  ListOfPost avec la liste des posts 
+      .get(`https://portfolioau777.herokuapp.com/posts/byuserId/${id}`)   
       .then((response) => {
         setListOfPosts(response.data);
 
@@ -53,56 +53,39 @@ function Profile() {
 
  
 
-  return ( <div className="containerpost">
-    <div >
+  return ( 
+  
+  
+ 
+  
+  <div className="containerpost">
+    <div className="flexportfolio">
 
    
      
-{/*       <div className="profil">
-      <img
-          src={"https://portfolioau777.herokuapp.com/images/" + photo_profil}
-          alt="profil"
-        />
-      </div> */}
 
-
-{/*       <div className="boutonpriv">
-        <button
-          onClick={() => {
-            history.push("/postpriv/" + id);
-          }}
-        >
-        
-          Voir la fiche de présentation
-        </button>
-      </div> */}
    
 
     
     
 
-{/* Map de la liste enegistrée dan l'autState avec la clée listOfPosts */}
+
 
         {listOfPosts.map((value, key) => {
 
 
   const date = new Date(value.createdAt);
       
-      /*   console.log(new Intl.DateTimeFormat('fr-ca').format(date));  */
+   
 
 
 
-          return (<div>
+          return (
+          
+          
+          <div className="flex">
     
-           {/*  <div className="animation2">
-             
-        
-        
-            
-                   <div class="animation2__ball animation2__ball1"><i class="fas"></i></div>
-                 
-                 
-                 </div> */}
+       
             <div  key={key}  className="post">
 
 
@@ -138,21 +121,15 @@ function Profile() {
               </div>
               <div className="footer">
                 <div className="textfooter">
-                 {/*   {value.createdAt.replace('T', ' à ').slice(0, 18)} */}
+                
 {new Intl.DateTimeFormat('local').format(date)}
-             {/*  Le {new Intl.DateTimeFormat('local').format(value.createdAt)}  */}
+           
 
        
               
                 </div>
 
-     {/*            <div className="buttons">
-                  <div className="cofee ">
-                    {" "}
-                    <ThumbUpAltIcon />
-                    <label className="labelcof"> {value.Likes.length}</label>
-                  </div>
-                </div> */}
+ 
               </div>
             </div>  </div>
           );

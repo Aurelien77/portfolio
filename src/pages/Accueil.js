@@ -1,7 +1,7 @@
 
 import image from "../logos/herbe.gif";
 
-import cv from "../logos/cv.pdf";
+import cv from "../logos/cv2.pdf";
 
 
 
