@@ -175,6 +175,7 @@ span:nth-child(5) {
   margin: 20px;
 }
 .animation2__ball {
+  /*    @include grand-ecran-ajustement_background; */
   background-image: url(../logos/2Cwq2.gif);
   background-position-x: center;
   background-position-y: center;
@@ -188,22 +189,17 @@ span:nth-child(5) {
   /* animation: bounceIn 1s;
   animation-iteration-count: 10; */
 }
+@media only screen and (max-width: 800px) {
+  .animation2__ball {
+    background-color: #d1515a;
+    height: 50%;
+    width: 50%;
+  }
+}
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
   .animation2__ball {
     height: 20%;
     width: 20%;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .animation2__ball {
-    height: 10%;
-    width: 10%;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .animation2__ball {
-    height: 50%;
-    width: 50%;
   }
 }
 .animation2__ball1 {
