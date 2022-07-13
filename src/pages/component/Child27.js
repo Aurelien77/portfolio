@@ -38,11 +38,11 @@ class Child27 extends Component {
 
   
       
-  
+ 
     
    </span>{shchild30 && <Child30 />}
       
-      <span onClick={() => this.hideComponent("shchild31")} className="formation">
+    {/*   <span onClick={() => this.hideComponent("shchild31")} className="formation">
         <br></br>
      --Autres-- child 31
       
@@ -51,7 +51,7 @@ class Child27 extends Component {
      
   
     
-   </span> {shchild31 && <Child31 />}
+   </span> {shchild31 && <Child31 />} */}
       
    </span>
      

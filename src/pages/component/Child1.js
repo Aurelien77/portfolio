@@ -47,7 +47,7 @@ class Child1 extends Component {
 
             <div  onClick={() => this.hideComponent("shchild5")}  id="topteam">
         <span className="texttitrecv"> <span id="spantopteam">TOPTEAM</span> filiale du groupe<span id="spantopteam"> DEVOTEAM </span>
-        <br></br> <span className="datecv"> ➡️ Septembre 2016 à janvier 2011</span> 
+        <br></br> <span className="datecv"> ➡️ Septembre 2016 à janvier 2021</span> 
         
         
         </span>
