@@ -33,7 +33,7 @@ class Child27 extends Component {
     return (
             <span className="tableau">
       <span onClick={() => this.hideComponent("shchild30")} className="formation" >
-      --Tssi : Technicien supérieur de support informatique child 27--
+      --Tssi : Technicien supérieur de support informatique--
      <br></br>
 
   

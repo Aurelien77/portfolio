@@ -24,7 +24,7 @@ class Child30 extends Component {
     const {  shchild30 } = this.state;
     return (
             
-      <span className="formation"><br></br> 
+      <span className="tableau"><br></br> 
 <u>1- Intervenir et assister à distance en centre de services informatiques</u> <br></br>
 - Assister les utilisateurs dans un environnement informatique et numérique <br></br>
 - Configurer et mettre à jour un poste de travail informatique <br></br>
